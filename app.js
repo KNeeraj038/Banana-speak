@@ -8,8 +8,8 @@ function constructUrl(inputString){
     return serverUrl + "?" + "text="+ inputString;
 }
 
-function errorHandler(error){
-    Console.log("Error occured ! : "+error);
+function errorHandler(error, message){
+    console.log("Error occured ! : "+error+" message"+message);
 }
 function clickBtnHandler(){
     var inputString = txtInput.value;
@@ -21,7 +21,7 @@ function clickBtnHandler(){
     .then(json =>{
         txtOutput.innerHTML = json.contents.translated
     })
-    .catch(errorHandler)
+    .catch(errorHandler(json.contents.message))
 
     // console.log(inputString);
 }
