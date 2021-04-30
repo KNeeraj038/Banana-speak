@@ -1,6 +1,16 @@
+body{
+    background-color:#f5e050;
+}
+
+.header-main{
+    text-align: center;
+    font-size: larger;
+    
+}
 #txtOutput{
     width: 300px;
     height: 100px;
+    /* margin-top: 1rem; */
     border: .1rem solid black;
 }
 
@@ -8,5 +18,18 @@
     width: 300px;
     height: 100px;
     /* padding:  */
+    margin-bottom: 1rem;
+    margin:auto;
     border: 0.1rem solid black;
+}
+
+#btnTranslate{
+    align-content: center;
+}
+
+.container{
+    /* background-color: yellow; */
+    align-content: center;
+    margin: auto;
+    width: 300px;
 }

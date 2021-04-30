@@ -9,13 +9,19 @@
     
 </head>
 <body>
+    <header class="header-main">
+        <p>Minion Translator</p>
+    </header>
+    <div class="container container-center">
+        <textarea id="txtInput" placeholder="Enter something..."></textarea>
+    </div>
     
-    <textarea id="txtInput" placeholder="Enter something"></textarea>
-    
-    <button id="btnTranslate">Translate it</button>
-
-    <div id="txtOutput">
-        Output will come here
+    <div class="container container-center">
+    <button id="btnTranslate">Translate to minion language >> </button>
+    </div>
+    <div class="container container-center">
+        <p>Output window: </p>
+        <textarea id="txtOutput" disabled></textarea>
     </div>
     <script src='app.js'></script>
 </body>
